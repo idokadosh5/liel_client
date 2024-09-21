@@ -3,7 +3,6 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY package.json package-lock.json .
 RUN npm install
-COPY src/ .
-COPY public/ .
-EXPOSE 3000
+COPY . .
+EXPOSE 5173
 CMD [ "npm", "run", "dev"]
