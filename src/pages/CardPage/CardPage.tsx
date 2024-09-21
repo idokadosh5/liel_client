@@ -24,7 +24,7 @@ export default function CardPage() {
     useEffect(() => {
       const fetchCard = async () => {
         try {
-          const response = await fetch(`http://127.0.0.1:3000/api/meals/${cardId}`, {
+          const response = await fetch(`http://server:3000/api/meals/${cardId}`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
           });

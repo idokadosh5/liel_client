@@ -58,7 +58,7 @@ export default function UpdateCard(props:CardCreation) {
 
   const fetchEditedcard = async(props:CardCreation)=>{
     try{
-      const response = await fetch(`http://127.0.0.1:3000/api/meals/${cardId}`, {
+      const response = await fetch(`http://server:3000/api/meals/${cardId}`, {
       method:'PATCH',
       headers:{'Content-Type': 'application/json',
     },

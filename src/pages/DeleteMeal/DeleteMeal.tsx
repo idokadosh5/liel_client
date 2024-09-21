@@ -21,7 +21,7 @@ const [_id, set_id]  = useState('')
 useEffect( ()=> {
     const fetchAllmeals = async()=>{
       try{
-        const response = await fetch('http://127.0.0.1:3000/api/meals', {
+        const response = await fetch('http://server:3000/api/meals', {
           method:'GET',
           headers:{'Content-Type': 'application/json'}
         })
@@ -38,7 +38,7 @@ useEffect( ()=> {
 
     const handleDeleteButton = async (_id:string)=>{
         try {
-            const response = await fetch(`http://127.0.0.1:3000/api/meals/${_id}`, {
+            const response = await fetch(`http://server:3000/api/meals/${_id}`, {
                 method:'DELETE',
                 headers:{'Content-Type': 'application/json'}
               })
