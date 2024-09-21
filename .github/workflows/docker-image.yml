@@ -62,16 +62,7 @@ jobs:
             git commit -a -m try
             git push
             #ls
-      - name: Push generated webpage to another repository
-        uses: nkoppel/push-files-to-another-repository@v1.1.2
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-files: './checkout.md/'
-          destination-username: 'idokadosh5'
-          destination-repository: 'helloworld'
-          destination-directory: './charts/hello-world'
-          commit-email: 'idokad@gmail.com'
+
 
              
 
