@@ -1,0 +1,20 @@
+.CreateCard{
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 300px;
+}
+@media only screen and (max-width: 600px) {
+    .CreateCard{
+        margin-left: 100px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .CreateCard{
+        margin-left: 150px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .CreateCard{
+        margin-left: 300px;
+    }
+}
