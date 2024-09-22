@@ -85,7 +85,7 @@ export default function AuthProvider({children}:{children:React.ReactNode}) {
       const token = localStorage.getItem('userToken')
       
         try{
-          const response = await fetch(`http://a14cc540c6ce647b4b7261bf6ee8328f-1615012765.eu-central-1.elb.amazonaws.com:3000/api/users/${_id}`, {
+          const response = await fetch(`http://a939c68d0986f4fdd843124d40a78e86-1609853690.eu-central-1.elb.amazonaws.com:3000/api/users/${_id}`, {
             method:'GET',
             headers:{
             'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ export default function AuthProvider({children}:{children:React.ReactNode}) {
     
     const signIn = async (email:string, password:string) => {
       try{
-        const response = await fetch('http://a14cc540c6ce647b4b7261bf6ee8328f-1615012765.eu-central-1.elb.amazonaws.com:3000/api/auth/login', {
+        const response = await fetch('http://a939c68d0986f4fdd843124d40a78e86-1609853690.eu-central-1.elb.amazonaws.com:3000/api/auth/login', {
           method:'POST',
           headers:{'Content-Type': 'application/json'},
           body:JSON.stringify({email,password})
@@ -133,7 +133,7 @@ export default function AuthProvider({children}:{children:React.ReactNode}) {
 
     const signUp = async (userSignupDetails:IUserDetails) => {
       try{
-        const response = await fetch('http://a14cc540c6ce647b4b7261bf6ee8328f-1615012765.eu-central-1.elb.amazonaws.com:3000/api/auth/register', {
+        const response = await fetch('http://a939c68d0986f4fdd843124d40a78e86-1609853690.eu-central-1.elb.amazonaws.com:3000/api/auth/register', {
         method:'POST',
         headers:{'Content-Type': 'application/json'},
         body:JSON.stringify(userSignupDetails)
