@@ -3,6 +3,7 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY package.json package-lock.json .
 RUN npm install 
+RUN node ./node_modules/esbuild/install.js
 COPY . .
 EXPOSE 5173
 CMD [ "npm", "run", "dev"]
