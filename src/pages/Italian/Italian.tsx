@@ -20,7 +20,7 @@ export default function Italian() {
   useEffect( ()=> {
     const fetchAllmeals = async()=>{
       try{
-        const response = await fetch('http://server:3000/api/meals', {
+        const response = await fetch('http://a14cc540c6ce647b4b7261bf6ee8328f-1615012765.eu-central-1.elb.amazonaws.com:3000/api/meals', {
           method:'GET',
           headers:{'Content-Type': 'application/json'}
         })
