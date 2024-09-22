@@ -3,6 +3,7 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY package.json package-lock.json .
 RUN npm install 
+run npm cache clean --force
 COPY . .
 RUN rm -rf node_modules/.vite/*
 EXPOSE 5173
