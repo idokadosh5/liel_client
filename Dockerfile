@@ -6,4 +6,4 @@ RUN npm install
 RUN rm -rf node_modules/.vite
 COPY . .
 EXPOSE 5173
-CMD [ "npm", "run", "dev" "--", "--force"]
+CMD [ "npm", "run", "dev", "--", "--force"]
