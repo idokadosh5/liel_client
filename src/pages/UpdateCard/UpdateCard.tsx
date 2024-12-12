@@ -58,7 +58,7 @@ export default function UpdateCard(props:CardCreation) {
 
   const fetchEditedcard = async(props:CardCreation)=>{
     try{
-      const response = await fetch(`http://a939c68d0986f4fdd843124d40a78e86-1609853690.eu-central-1.elb.amazonaws.com:3000/api/meals/${cardId}`, {
+      const response = await fetch(`https://a8387dd7fa2324cfbb1b06b37d43f98a-2055398039.eu-central-1.elb.amazonaws.com/api/meals/${cardId}`, {
       method:'PATCH',
       headers:{'Content-Type': 'application/json',
     },

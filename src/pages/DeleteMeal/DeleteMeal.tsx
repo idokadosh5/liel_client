@@ -21,7 +21,7 @@ const [_id, set_id]  = useState('')
 useEffect( ()=> {
     const fetchAllmeals = async()=>{
       try{
-        const response = await fetch('http://a939c68d0986f4fdd843124d40a78e86-1609853690.eu-central-1.elb.amazonaws.com:3000/api/meals', {
+        const response = await fetch('https://a8387dd7fa2324cfbb1b06b37d43f98a-2055398039.eu-central-1.elb.amazonaws.com/api/meals', {
           method:'GET',
           headers:{'Content-Type': 'application/json'}
         })
@@ -38,7 +38,7 @@ useEffect( ()=> {
 
     const handleDeleteButton = async (_id:string)=>{
         try {
-            const response = await fetch(`http://server:3000/api/meals/${_id}`, {
+            const response = await fetch(`https://a8387dd7fa2324cfbb1b06b37d43f98a-2055398039.eu-central-1.elb.amazonaws.com/api/meals/${_id}`, {
                 method:'DELETE',
                 headers:{'Content-Type': 'application/json'}
               })
